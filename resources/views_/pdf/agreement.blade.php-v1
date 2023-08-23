@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <style>
+
+        /* Add your custom styles here */
+
+        body {
+
+            text-align: left;
+
+            font-size: 16px;
+
+            margin: 20px;
+
+        }
+
+
+
+        h2 {
+
+            font-size: 28px;
+
+            margin-bottom: 10px;
+
+        }
+
+
+
+        p {
+
+            margin-bottom: 5px;
+
+        }
+
+
+
+        .key {
+
+            display: inline-block;
+
+            width: 150px;
+
+        }
+
+
+
+        .text-center {
+
+            text-align: center;
+
+        }
+
+
+        .invoice-para {
+
+            margin-bottom: 25px;
+
+        }
+
+        .line {
+
+            border: none;
+
+            border-top: 2px solid black;
+
+        }
+
+        .invoice-header {
+
+            position: relative;
+            padding-top:30px;
+
+        }
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <hr class="line" />
+
+    <h2 class="text-center invoice-header">{{ $license }}</h2>
+
+    <p class="text-center invoice-para">This agreement is for our master/sound recording only, you still will be required to obtain a license from the original publisher or copyright owner through harryfox.com or songclearance.com</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">To :</span> {{ $to }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Address :</span> {{ $address }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Date :</span> {{ date('m-d-Y', strtotime($date)) }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Re :</span> {{ $re }}</p>
+
+
+
+    <hr class="line" />
+
+
+
+    <p class="invoice-para">On behalf of Great "O" Music, we are pleased to make you the following offer to license our Title as set forth below:</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px;"><span class="key">Licensee :</span> {{ $license }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Project :</span> {{ $project }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Title :</span> "{{ $title }}"</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Rights :</span> Sound Recording Only (Cover Version) Non-Exclusive. No third party licensing granted.</p>
+
+
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Term :</span> {{ $term }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Territory :</span> {{ $territory }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Payment :</span> ${{ number_format($price, 2) }}</p>
+
+    <p class="invoice-para" style="margin-top: 0px;"><span class="key">Other Rights :</span> Great "O" Music shall receive proper credit on any and all liner notes, labels, CDs, single sleeves, including stickering and any print advertisements.</p>
+
+    <p class="invoice-para">Licensee is required to procure and retain all necessary agreements concerning the underlying musical composition embodied in the sound recording with any third party, and Licensee is solely responsible to make any and all payments in connection therewith.</p>
+
+    <p class="invoice-para">This License cannot be transferred or assigned by affirmative act or by operation of law without the express prior written consent of the undersigned in writing.</p>
+
+    <p class="invoice-para">This Agreement terminates and supersedes all prior understandings or agreements on the subject matter hereof. This Agreement may be modified only by a further writing that is duly executed by both parties.</p>
+
+    <p class="invoice-para">This Agreement is made and executed in the State of New York, and governed by the laws of New York. All parties hereto hereby consent to jurisdiction and venue exclusively in the Courts of the City and State of New York.</p>
+
+    <p class="invoice-para">Clicking "I have read and agree to the above license" will indicate your acceptance of the foregoing.</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px;">Accepted and agreed to by:</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Licensor: Great "O" Music</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Authorized Representative</p>
+
+    <p class="invoice-para mb-3" style="margin-bottom: 0px; margin-top: 0px;">Date: {{ date('m-d-Y', strtotime($date)) }}</p>
+
+
+
+    <p class="invoice-para" style="margin-bottom: 0px;">Accepted and agreed to by:</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Licensee: {{ $license }}</p>
+
+    <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Authorized Representative</p>
+
+    <p class="invoice-para mb-5" style="margin-bottom: 0px; margin-top: 0px;">Date: {{ date('m-d-Y', strtotime($date)) }}</p>
+
+</body>
+
+
+
+</html>

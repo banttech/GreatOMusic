@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+    <style>
+
+        /* Add your custom styles here */
+
+        body {
+
+            text-align: center;
+
+        }
+
+
+
+        h1 {
+
+            font-size: 24px;
+
+        }
+
+
+
+        p {
+
+            font-size: 16px;
+
+            margin-bottom: 5px;
+
+            text-align: left;
+
+        }
+
+
+
+        .key {
+
+            display: inline-block;
+
+            width: 135px;
+
+        }
+
+
+
+        .separator {
+
+            display: inline-block;
+
+            width: 10px;
+
+        }
+
+        .invoice-para {
+
+            font-size: 16px;
+
+            margin-bottom: 5px;
+
+            text-align: left;
+
+            font-family:Times;
+
+        }
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <h1 style="margin-top: 20px; font-weight:bold; font-family:Times;">Great "O" Music</h1>
+
+    <p class="invoice-para" style="text-align: right;">Date : <span>{{ date('m-d-Y', strtotime($date)) }}</span></p>
+
+    <p class="invoice-para" style="text-align: right; margin-top: 0px;">Invoice No. : <span>{{ $invoiceNumber }}</span></p>
+
+
+    <p class="invoice-para"><span class="key">Company Name</span>: <span style="margin-left: 15px;">{{ $companyName }}</span></p>
+
+    <p class="invoice-para"><span class=" key">Name</span>: <span style="margin-left: 15px;">{{ $name }}</span></p>
+
+    <p class="invoice-para"><span class="key">Address</span>: <span style="margin-left: 15px;">{{ $address }}</span></p>
+
+    <p class="invoice-para"><span class="key">Project</span>: <span style="margin-left: 15px;">{{ $project }}</span></p>
+
+    <p class="invoice-para"><span class="key">Title</span>: <span style="margin-left: 15px;">{{ $title }}</span></p>
+
+    <p class="invoice-para"><span class="key">License</span>: <span style="margin-left: 15px;">{{ $license }}</span></p>
+
+    <p class="invoice-para"><span class="key">Territory</span>: <span style="margin-left: 15px;">{{ $territory }}</span></p>
+
+    <p class="invoice-para"><span class="key">Term</span>: <span style="margin-left: 15px;">{{ $term }}</span></p>
+
+    <p class="invoice-para mb-5"><span class="key">Price</span>: <span style="margin-left: 15px;">${{ number_format($price, 2) }}</span></p>
+
+</body>
+
+
+
+</html>

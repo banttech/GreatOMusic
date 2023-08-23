@@ -1,0 +1,23 @@
+.imgvalidationmsg{
+    line-height:0.5px;
+}
+
+.card-header {
+    background: #696cff59;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+}
+
+.card-header h5 {
+    color:#000;
+    font-weight: 700;
+}
+
+.footertxt {
+    margin-top: 13px;
+    font-weight: 700;
+}
+
+.form-label, .col-form-label {
+    font-weight: 700;
+}

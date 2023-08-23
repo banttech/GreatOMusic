@@ -1,0 +1,274 @@
+@extends('layouts.frontend.app')
+
+@section('content')
+
+<style>
+
+    .invoice_section {
+
+        background: url("{{ asset('admin-assets/images/account-bg.jpg') }}");
+
+        min-height: 300px;
+
+        object-fit: cover;
+
+        background-size: 100%;
+
+    }
+
+
+
+    .width {
+
+        width: 100%;
+
+        background: #fff;
+
+        padding: 25px 50px 6px 50px;
+
+        margin: 60px 0px;
+
+    }
+
+
+
+    .box-1 h2 {
+
+        margin-left: -12px;
+
+        font-size: 46px;
+
+    }
+
+
+
+    .mainbgsblack {
+
+        border-bottom: 3px solid #CC0066;
+
+        box-shadow: 0 7px 0 0px #000000;
+
+    }
+
+
+
+    .invoice-header {
+
+        position: relative;
+        padding-top:30px;
+
+    }
+
+
+
+    .download-link {
+
+        position: absolute;
+
+        top: -82px;
+
+        left: 0;
+
+        cursor: pointer;
+
+    }
+
+
+
+    .width h2 {
+
+        font-size: 28px;
+
+        margin-bottom: 15px;
+        
+        font-weight:bold;
+
+    }
+
+
+
+    .invoice-para {
+
+        margin-bottom: 25px;
+
+    }
+
+
+
+    .key {
+
+        display: inline-block;
+
+        width: 150px;
+
+    }
+
+
+
+    .text-center {
+
+        text-align: center;
+
+    }
+
+
+
+    .line {
+
+        border: none;
+
+        border-top: 2px solid black;
+
+    }
+
+</style>
+
+
+
+<div class="heading-section">
+
+    <div class="" id="set">
+
+        <div class="m-0">
+
+            <div class="d-flex align-items-end invoice_section">
+
+                <div class="mainbgsblack" style="background-color: rgba(0, 0, 0, 0.8);width: 100%;">
+
+                    <div class="container">
+
+                        <div class="box-1 w-100">
+
+                            <h2>Agreement</h2>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<section class="about-inbox">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="width">
+
+                <hr class="line mt-5 first-hr" />
+
+                <div class="invoice-header">
+
+                    <h2 class="text-center">{{ $license->license }}</h2>
+
+                    <a class="download-link" href="{{ route('agreements.download', ['licenseId' => $license->random_id]) }}" data-toggle="tooltip" title="Download Agreement">
+
+                        <img class="download-img" src="{{ asset('frontend-assets/image/download-img.png') }}" alt="download" height="40" width="40">
+
+                    </a>
+
+                </div>
+
+                <p class="text-center invoice-para">This agreement is for our master/sound recording only, you still will be required to obtain a license from the original publisher or copyright owner through harryfox.com or songclearance.com</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">To :</span> {{$payment->first_name }} {{$payment->last_name }}</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Address :</span> {{ $license->address }}</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Date :</span> {{ date('m-d-Y', strtotime($payment->date)) }}</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Re :</span> {{ $track->title }} | {{ $track->artist }}</p>
+
+
+
+                <hr class="line" />
+
+
+
+                <p class="invoice-para">On behalf of Great "O" Music, we are pleased to make you the following offer to license our Title as set forth below:</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px;"><span class="key">Licensee :</span> {{ $license->license }}</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Project :</span> {{ $license->project }}</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Title :</span> "{{ $track->title }}"</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Rights :</span> Sound Recording Only (Cover Version) Non-Exclusive. No third party licensing granted.</p>
+
+
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Term :</span> {{ $license->term }}</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Territory :</span> {{ $license->territory }}</p>
+
+                <?php
+
+                if($cart) {
+                    $price = $cart->price;
+
+                    if ($cart->coupon_code != null) {
+    
+                        $price = $cart->price - $cart->coupon_discount;
+    
+                    }
+                } else {
+                    $price = $license->price;
+                }
+
+                ?>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;"><span class="key">Payment:</span> ${{ number_format($price, 2) }}</p>
+
+                <p class="invoice-para mb-4" style="margin-top: 0px;"><span class="key">Other Rights:</span> Great "O" Music shall receive proper credit on any and all liner notes, labels, CDs, single sleeves, including stickering and any print advertisements.</p>
+
+                <p class="invoice-para mb-3">Licensee is required to procure and retain all necessary agreements concerning the underlying musical composition embodied in the sound recording with any third party, and Licensee is solely responsible to make any and all payments in connection therewith.</p>
+
+                <p class="invoice-para mb-3">This License cannot be transferred or assigned by affirmative act or by operation of law without the express prior written consent of the undersigned in writing.</p>
+
+                <p class="invoice-para mb-3">This Agreement terminates and supersedes all prior understandings or agreements on the subject matter hereof. This Agreement may be modified only by a further writing that is duly executed by both parties.</p>
+
+                <p class="invoice-para mb-3">This Agreement is made and executed in the State of New York, and governed by the laws of New York. All parties hereto hereby consent to jurisdiction and venue exclusively in the Courts of the City and State of New York.</p>
+
+                <p class="invoice-para mb-3">Clicking "I have read and agree to the above license" will indicate your acceptance of the foregoing.</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px;">Accepted and agreed to by:</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Licensor: Great "O" Music</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Authorized Representative</p>
+
+                <p class="invoice-para mb-3" style="margin-bottom: 0px; margin-top: 0px;">Date: {{ date('m-d-Y', strtotime($payment->date)) }}</p>
+
+
+
+                <p class="invoice-para" style="margin-bottom: 0px;">Accepted and agreed to by:</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Great "O" Music</p>
+
+                <p class="invoice-para" style="margin-bottom: 0px; margin-top: 0px;">Authorized Representative</p>
+
+                <p class="invoice-para mb-5" style="margin-bottom: 0px; margin-top: 0px;">Date: {{ date('m-d-Y', strtotime($payment->date)) }}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+@endsection

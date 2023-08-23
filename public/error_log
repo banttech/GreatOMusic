@@ -1,0 +1,104 @@
+[18-May-2023 09:08:08 UTC] PHP Fatal error:  Class App\Models\Login contains 6 abstract methods and must therefore be declared abstract or implement the remaining methods (Illuminate\Contracts\Auth\Authenticatable::getAuthIdentifierName, Illuminate\Contracts\Auth\Authenticatable::getAuthIdentifier, Illuminate\Contracts\Auth\Authenticatable::getAuthPassword, ...) in /home2/banttyak/gom.banttech.com/public/app/Models/Login.php on line 9
+[27-May-2023 06:04:06 UTC] PHP Fatal error:  Could not check compatibility between App\Http\Middleware\Handler::render($request, App\Http\Middleware\Exception $exception) and Illuminate\Foundation\Exceptions\Handler::render($request, Throwable $e), because class App\Http\Middleware\Exception is not available in /home2/banttyak/gom.banttech.com/public/app/Http/Middleware/Authenticate.php on line 14
+[27-May-2023 06:07:36 UTC] PHP Fatal error:  Declaration of App\Http\Middleware\Authenticate::handle(Illuminate\Http\Request $request, App\Http\Middleware\Closure $next) must be compatible with Illuminate\Auth\Middleware\Authenticate::handle($request, Closure $next, ...$guards) in /home2/banttyak/gom.banttech.com/public/app/Http/Middleware/Authenticate.php on line 12
+[27-May-2023 06:08:03 UTC] PHP Fatal error:  Declaration of App\Http\Middleware\Authenticate::handle(Illuminate\Http\Request $request, App\Http\Middleware\Closure $next) must be compatible with Illuminate\Auth\Middleware\Authenticate::handle($request, Closure $next, ...$guards) in /home2/banttyak/gom.banttech.com/public/app/Http/Middleware/Authenticate.php on line 12
+[01-Jun-2023 08:49:21 UTC] Stripe Notice: Undefined property of Stripe\PaymentIntent instance: charges
+[01-Jun-2023 08:52:21 UTC] Stripe Notice: Undefined property of Stripe\PaymentIntent instance: charges
+[01-Jun-2023 08:55:42 UTC] Stripe Notice: Undefined property of Stripe\PaymentIntent instance: charges
+[01-Jun-2023 13:51:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/public/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/public/index.php on line 34
+[01-Jun-2023 13:51:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home2/banttyak/gom.banttech.com/public/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home2/banttyak/gom.banttech.com/public/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home2/banttyak/gom.banttech.com/public/vendor/composer/autoload_real.php(45): {closure}('0e6d7bf4a5811bf...', '/home2/banttyak...')
+#1 /home2/banttyak/gom.banttech.com/public/vendor/autoload.php(25): ComposerAutoloaderInit46f681203b17b841186ff17eacf3e8e7::getLoader()
+#2 /home2/banttyak/gom.banttech.com/public/public/index.php(34): require('/home2/banttyak...')
+#3 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/vendor/composer/autoload_real.php on line 41
+[16-Jun-2023 07:12:47 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable $exception in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php:55
+Stack trace:
+#0 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Undefined varia...', '/home2/banttyak...', 55)
+#1 /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php(55): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'Undefined varia...', '/home2/banttyak...', 55)
+#2 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(217): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(ErrorException))
+#3 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(194): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#4 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#5 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#6 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php on line 55
+[16-Jun-2023 07:12:50 UTC] PHP Fatal error:  Uncaught ErrorException: Undefined variable $exception in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php:55
+Stack trace:
+#0 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'Undefined varia...', '/home2/banttyak...', 55)
+#1 /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php(55): Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(2, 'Undefined varia...', '/home2/banttyak...', 55)
+#2 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(217): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(ErrorException))
+#3 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(194): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(ErrorException))
+#4 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(ErrorException))
+#5 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(ErrorException))
+#6 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php on line 55
+[16-Jun-2023 07:26:02 UTC] PHP Fatal error:  Uncaught TypeError: App\Exceptions\Handler::render(): Return value must be of type Illuminate\Http\Response, Symfony\Component\HttpFoundation\Response returned in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php:59
+Stack trace:
+#0 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(217): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(TypeError))
+#1 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(194): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(TypeError))
+#2 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(TypeError))
+#3 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(TypeError))
+#4 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php on line 59
+[16-Jun-2023 07:26:05 UTC] PHP Fatal error:  Uncaught TypeError: App\Exceptions\Handler::render(): Return value must be of type Illuminate\Http\Response, Symfony\Component\HttpFoundation\Response returned in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php:59
+Stack trace:
+#0 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(217): App\Exceptions\Handler->render(Object(Illuminate\Http\Request), Object(TypeError))
+#1 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(194): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse(Object(TypeError))
+#2 /home2/banttyak/gom.banttech.com/public/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(254): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(TypeError))
+#3 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->Illuminate\Foundation\Bootstrap\{closure}(Object(TypeError))
+#4 {main}
+  thrown in /home2/banttyak/gom.banttech.com/public/app/Exceptions/Handler.php on line 59
+[05-Jul-2023 06:50:38 UTC] PHP Fatal error:  Class declarations may not be nested in /home2/banttyak/gom.banttech.com/public/app/Http/Controllers/Frontend/InvoiceController.php on line 56
+[21-Aug-2023 07:43:16 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home2/banttyak/gom.banttech.com/public/storage/framework/views/ba5f607effc6d0935eb2360d32ba7cf6.php on line 431

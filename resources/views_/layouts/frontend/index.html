@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great "O" Music</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/style.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-black">
+            <img src="image/logo.png" alt="" style="width: 200px;margin-left: 2%;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="musicsearch.html"> <span> Music Search</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lisence.html">Licensing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 text-white pr-5">
+                    <a href="">Login</a> | &nbsp;
+                    <input type="button" class="btn " class="form-control" value="Sign up" style="background:#CC0066;color:white;border-radius:20px;padding:4px 20px 7px 20px; margin-top:2px;">
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/A1.jpg" class="d-block w-100" alt="...">
+                <div class="slider">
+                    <h1>The Greatest Music Available</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/A11 (2).jpg" class="d-block w-100" alt="...">
+                <div class="slider">
+                    <h1>Music Is Forever</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="image/A6.jpg" class="d-block w-100" alt="...">
+                <div class="slider">
+                    <h1>Amazing Sound Quality</h1>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+         </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </button>
+    </div>
+
+    <section id="hero">
+        <div class="container">
+            <div class="searchwrapper">
+                <div class="searchbox">
+                    <div class="row">
+                        <div class="col-md-2 flex">
+                            <img src="image/music.png" alt="">
+                            <span class="form-control"> <p>Music</p></span>
+                        </div>
+                        <div class="col-md-7"><input type="text" class="form-control search-field" placeholder="Search by Titles, Artist,Genre, keyword..."></div>
+                        <div class="col-md-2"><input type="button" class="btn " class="form-control" value="Search" style="background:#CC0066;color:white;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 genreimg" style="width:100%">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                                <img src="image/music.png" alt=""> Titles</a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                <img src="image/artist.png" alt="">&nbsp;Artist</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <img src="image/genre.png" alt="">&nbsp;Genre</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                            <div class="row" style="padding-top:2px;">
+                                <div class="col-md-1 pl-5 ">
+                                    <img src="image/play.png" alt="">
+                                </div>
+                                <div class="col-md-5 pt-2">
+                                    <p>hello song hello </p>
+                                    <p>hello song hello hello song hello </p>
+                                </div>
+                                <div class="col-md-2  pt-2">Full Version</div>
+                                <div class="col-md-2  pt-2">Tempo</div>
+                                <div class="col-md-2 pt-2">
+                                    <img src="image/shopping.png" alt="" style="padding-left:50%;">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row" style="padding-top:2px;">
+                                <div class="col-md-1 pl-5 ">
+                                    <img src="image/play.png" alt="">
+                                </div>
+                                <div class="col-md-5 pt-2">
+                                    <p>hello song hello </p>
+                                    <p>hello song hello hello song hello </p>
+                                </div>
+                                <div class="col-md-2  pt-2">Full Version</div>
+                                <div class="col-md-2  pt-2">Tempo</div>
+                                <div class="col-md-2 pt-2">
+                                    <img src="image/shopping.png" alt="" style="padding-left:50%;">
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row" style="padding-top:2px;">
+                                <div class="col-md-1 pl-5 ">
+                                    <img src="image/play.png" alt="">
+                                </div>
+                                <div class="col-md-5 pt-2">
+                                    <p>hello song hello </p>
+                                    <p>hello song hello hello song hello </p>
+                                </div>
+                                <div class="col-md-2  pt-2">Full Version</div>
+                                <div class="col-md-2  pt-2">Tempo</div>
+                                <div class="col-md-2 pt-2">
+                                    <img src="image/shopping.png" alt="" style="padding-left:50%;">
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row" style="padding-top:2px;">
+                                <div class="col-md-1 pl-5 ">
+                                    <img src="image/play.png" alt="">
+                                </div>
+                                <div class="col-md-5 pt-2">
+                                    <p>hello song hello </p>
+                                    <p>hello song hello hello song hello </p>
+                                </div>
+                                <div class="col-md-2  pt-2">Full Version</div>
+                                <div class="col-md-2  pt-2">Tempo</div>
+                                <div class="col-md-2 pt-2">
+                                    <img src="image/shopping.png" alt="" style="padding-left:50%;">
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row" style="padding-top:2px;">
+                                <div class="col-md-1 pl-5 ">
+                                    <img src="image/play.png" alt="">
+                                </div>
+                                <div class="col-md-5 pt-2">
+                                    <p>hello song hello </p>
+                                    <p>hello song hello hello song hello </p>
+                                </div>
+                                <div class="col-md-2  pt-2">Full Version</div>
+                                <div class="col-md-2  pt-2">Tempo</div>
+                                <div class="col-md-2 pt-2">
+                                    <img src="image/shopping.png" alt="" style="padding-left:50%;">
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row" style="padding-top:2px;">
+                                <div class="col-md-1 pl-5 ">
+                                    <img src="image/play.png" alt="">
+                                </div>
+                                <div class="col-md-5 pt-2">
+                                    <p>hello song hello </p>
+                                    <p>hello song hello hello song hello </p>
+                                </div>
+                                <div class="col-md-2  pt-2">Full Version</div>
+                                <div class="col-md-2  pt-2">Tempo</div>
+                                <div class="col-md-2 pt-2">
+                                    <img src="image/shopping.png" alt="" style="padding-left:50%;">
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="row text-center" style="padding:5px 10px 0 10px;">
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-2">
+                                    <p>Full Version</p>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section audioSection">
+        <div class="row" style="background:#30343F">
+            <div class="col text-center py-2">
+                <audio controls autoplay style="width: 60%">
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid" id="faq-1">
+        <div class="accordion" id="accordionExample">
+            <h1>Frequently Asked Questions</h1>
+            <div class="card mt-5">
+                <div class="card-header" id="headingOne">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none;display:flex; justify-content: space-between;">
+              <p>Question no-1</p>
+              <img src="image/downarrow.png" width="30px" height="30px">
+            </button>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Some placeholder content for the first accordion panel. This panel is shown by default, thanks to the <code>.show</code> class.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-decoration: none;display:flex; justify-content: space-between;">
+              <p>Question no-2</p>
+              <img src="image/downarrow.png" width="30px" height="30px">
+            </button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Some placeholder content for the second accordion panel. This panel is hidden by default.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none;display:flex; justify-content: space-between;">
+              <p>Question no-3</p>
+              <img src="image/downarrow.png" width="30px" height="30px">
+            </button>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section" id="section" style="background-image: url('./image/A9.jpg');">
+        <div class=" color-overlay d-flex justify-content-center hh" style="padding-top: 8%;text-align: center;">
+            <div class="txtheading">
+                <h1>Never Miss a Beat</h1>
+                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+        </div>
+        <form class="form-inline" style="justify-content: center;">
+            <div class="form-group mb-2">
+                <div class="img-3" style="border-width: 0; border-bottom: 1px solid white; border-radius: 0; background: transparent;">
+                    <img src="image/mail-2.png " alt="" class="mail">
+                    <hr>
+                    <input type="email" class="form-control" id="inputPassword2" placeholder="Your Email" style="border-width: 0; border: 0px; border-radius: 0; background: transparent;">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-warning rounded-pill btn-block shadow-sm " style="width:12%;background:#CC0066;color:white;border-radius:0px;border: #CC0066;padding-bottom: 8px;">Subscribe</button>
+        </form>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-2 pb-0">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="https://greatomusic.com/"> <img src="image/logo.png" alt="" style="width: 200%;height: 20%;"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Great "O" Music is your source for newly recorded versions of hit songs in all genres of music. Our catalog contains thousands of masters with excellent sound quality and can provide you with just the right music for any
+                                    personal or commercial project. Search our comprehensive music catalog to simplify your licensing needs!</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <img src="image/facebook.webp" alt="" width="20px" height="20px">&nbsp;&nbsp;<img src="image/youtube.png" alt="" width="25px" height="28px">&nbsp;&nbsp;<img src="image/twitter.png" alt="" width="20px" height="20px
+                           ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#"> Music Search </a></li>
+                                <li><a href="#"> Licensing</a></li>
+                                <li><a href="#">Contact </a></li>
+                                <li><a href="#">Terms </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Newsletter</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><img src="image/Aero.png" alt="" width="40px;"height="40px;"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 m-auto text-center ">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2023 Great "O" Music. All Rights Reserved. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
+
+</html>
